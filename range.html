@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Range</title>
+        h2{
+            background-color: antiquewhite;
+            text-align: center;
+        }
+        .btns{
+            margin: 1% 0 0 3%;
+            text-align: center;
+            }
+        button{
+            background-color: azure;
+            text-align: center;
+            width: 150px;
+            height: 30px;
+        }
+        #r1:hover + .a{
+            width: 20px;
+            height: 30px;
+            border: 1px solid black;
+            border-radius: 5px;
+            background-color: aqua;
+            animation-name: range1;
+            animation-duration: 4s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+        }
+        @keyframes range1{
+            from{
+                background-color: aqua;
+                width: 0%;
+            }
+            to{
+                background-color: blueviolet;
+                width: 25%;
+            }
+        }
+        #r2:hover + .b{
+            width: 20px;
+            height: 30px;
+            border: 1px solid black;
+            border-radius: 5px;
+            background-color: aqua;
+            animation-name: range2;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+        }
+        @keyframes range2{
+            from{
+                background-color: aqua;
+                width: 0%;
+            }
+            to{
+                background-color: gold;
+                width: 50%;
+            }
+        }
+        #r3:hover + .c{
+            width: 20px;
+            height: 30px;
+            border: 1px solid black;
+            border-radius: 5px;
+            background-color: aqua;
+            animation-name: range3;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+        }
+        @keyframes range3{
+            from{
+                background-color: aqua;
+                width: 0%;
+            }
+            to{
+                background-color: greenyellow;
+                width: 75%;
+            }
+        }
+        #r4:hover + .d{
+            width: 20px;
+            height: 30px;
+            border: 1px solid black;
+            border-radius: 5px;
+            background-color: aqua;
+            animation-name: range4;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+        }
+        @keyframes range4{
+            from{
+                background-color: aqua;
+                width: 0%;
+            }
+            to{
+                background-color: green;
+                width: 100%;
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    <h2>Task-1</h2>
+    <div id="btns"><center>
+        <button id="r1">Range_1</button>
+        <div class="a"></div>
+        <button id="r2">Range_2</button>
+        <div class="b"></div>
+        <button id="r3">Range_3</button>
+        <div class="c"></div>
+        <button id="r4">Range_4</button>
+        <div class="d"></div>
+        </center>
+    </div>
+</body>
+</html>
